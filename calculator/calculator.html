@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+
+  <title>Calculator Exercise</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    .calc { 
+      width: 100%; 
+      max-width: 330px; 
+      padding: 15px; 
+      margin: auto; 
+    }
+  </style>
+</head>
+<body>
+  <main class="text-center calc">
+
+    <!-- this is the calculator form -->
+    <form>
+      <h1 class="h3 mb-3 fw-normal">Calculator</h1>
+      
+      <!-- this is the first input -->
+      <div class="form-floating">
+        <input id="input_1" class="form-control" type="number" placeholder="1"/>
+        <label for="input_1">Input 1</label>
+      </div> 
+      
+      <!-- the buttons -->
+      <div class="row mt-2">
+        <div class="col">
+          <button id="button_add" class="w-100 btn btn-lg btn-success" type="button">+</button>
+        </div>
+        <div class="col">
+          <button id="button_subtract" class="w-100 btn btn-lg btn-danger" type="button">-</button>
+        </div>
+        <div class="col">
+          <button id="button_multiply" class="w-100 btn btn-lg btn-info" type="button">x</button>
+        </div>
+        <div class="col">
+          <button id="button_divide" class="w-100 btn btn-lg btn-warning" type="button">/</button>
+        </div>
+      </div>
+
+      <!-- this is the second input -->
+      <div class="form-floating mt-2">
+        <input id="input_2" class="form-control" type="number" placeholder="2"/>
+        <label for="input_2">Input 2</label>
+      </div>
+
+      <button id="button_equals" class="mt-2 w-100 btn btn-lg btn-primary" type="button">=</button>
+
+      <button id="button_clear" class="mt-2 w-100 btn btn-lg btn-dark" type="button">clear</button>
+      
+    </form>
+
+    <!-- calculations should output to this list -->
+    <h1 class="h4 mb-3 fw-normal mt-3">Output List</h1>
+    <ul id="list_output" class="list-group">
+      <!-- this is a placeholder -->
+      <li class="list-group-item">42</li>
+    </ul>
+
+  </main>
+
+  <script type="module" src="./calculator.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
